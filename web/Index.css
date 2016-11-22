@@ -1,0 +1,26 @@
+#muestra{
+    background-color: activecaption;
+    width: 50%;
+    height: 500px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:black;
+}
+#buton{
+    margin: 10%;
+    width: 70px;
+    height: 40px;
+    background: #3366ff;
+    color: white;
+    border: 1px solid #3366ff;
+}
+#buton:hover{
+    background: #ccccff;
+    border: 1px solid #ccccff;
+    color:black;
+}
