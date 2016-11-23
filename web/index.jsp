@@ -4,12 +4,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Principal</title>
-        <link href="Index.css" rel="stylesheet" type="text/css"/>
+        <link href="css/Index.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body style="background: black;">
+    <body>
         <div id="muestra">
-            
-            <a href=""><button id="buton">Ingreso</button></a>
+            <div id="Logo"><center><img src="img/logo.jpg" /></center></div>
+            <h1>Elico Group</h1>
+            <center><a href="Login.jsp"><button id="buton">Ingreso</button></a></center>
+            <p>Facturacion de recibos</p>
         </div>
     </body>
 </html>
