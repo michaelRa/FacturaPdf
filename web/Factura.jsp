@@ -6,6 +6,23 @@
         <title>Factura</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Factura</h1>
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
     </body>
 </html>
