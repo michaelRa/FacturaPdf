@@ -41,14 +41,14 @@ public class Autenticacion extends HttpServlet {
         Usuarios u = new Usuarios();
 
         if ("".equals(user) || null == user) {
-            men = "<div id=\"Error\">Error:<br> Ingrese el usuario</div>";
+            men = "Error:<br> Ingrese el usuario";
         }
         if ("".equals(clave) || null == clave) {
-            men = "<div id=\"Error\"> Error:<br> Ingrese la  Contraseña </div>";
+            men = "Error:<br> Ingrese la  Contraseña";
         }
         if ("".equals(user) || null == user) {
             if ("".equals(clave) || null == clave) {
-                men = "<div id=\"Error\"> Error:<br> Ingrese Usuario y Contraseña </div>";
+                men = "Error:<br> Ingrese Usuario y Contraseña";
             }
         }
 
@@ -56,10 +56,10 @@ public class Autenticacion extends HttpServlet {
             u = un.ValidarIngreso(user, clave);
             if (u.getUsuario() != "0") {
                 request.getSession(true).setAttribute("Usuario", u);
-                request.setAttribute("target", "./Factura.jpg");
+                request.setAttribute("target", "./Montaje.jsp");
             } else {
-                request.setAttribute("target", "./InicioSesion.jsp");
-                men = "<div class=\"Error\" id=\"Error\"> Error:<br> Los datos son incorrectos </div>";
+                request.setAttribute("target", "./Login.jsp");
+                men = "Error:<br> Los datos son incorrectos";
 
             }
         }// si se ingresaron todos datos

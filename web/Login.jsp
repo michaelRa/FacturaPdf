@@ -3,7 +3,6 @@
 <html>
     <%
         String mensajeError = (String) request.getAttribute("mensajeError");
-        String usuario = request.getParameter("Usuario") == null ? "" : request.getParameter("Usuario");
     %>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,7 +10,7 @@
         <title>Login</title>
     </head>
     <body>
-        <form name ="xForm" method="POST" action="./Autenticacion" />
+        <form name ="xForm" method="POST" action="./Autenticacion" >
         <div id="loginDIV">
             <p>Elico Group</p>
             <div id="tabla">
@@ -43,12 +42,14 @@
                     <center><input type="button" value="Regresar" id="botones" onClick=" window.location.href = 'index.jsp'"></center>
                     </td>
                     </tr>
-                    <%if (mensajeError != null) {%>
-                            <%=mensajeError%>
-                            <%}%>
-
                 </table>
-
+                <div id="men">
+                <%if (mensajeError != null) {%>
+                
+                <%=mensajeError%>
+                
+                <%}%>
+                </div>
             </div>
         </div>
     </form>
