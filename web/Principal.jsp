@@ -1,5 +1,5 @@
 <%
-    String target = request.getAttribute("target") != null ? (String) request.getAttribute("target") : "InicioSesion.jsp";
+    String target = request.getAttribute("target") != null ? (String) request.getAttribute("target") : "Login.jsp";
 %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
