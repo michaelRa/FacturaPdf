@@ -11,7 +11,7 @@ public class LoginB {
     
     public Usuarios ValidarIngreso(Connection con, String user, String pass) {
         Usuarios u = new Usuarios();
-        u.setUsuario("0");
+        
         try {
             PreparedStatement p = con.prepareStatement(Login.ValidarIngreso(user, pass));
             ResultSet r = p.executeQuery();
@@ -20,10 +20,12 @@ public class LoginB {
                 u.setContraseña(r.getString(2));
             }
         } catch (Exception e) {
+            
         } finally {
             try {
                 con.close();
             } catch (Exception e) {
+                
             }
         }
         return u;

@@ -8,7 +8,7 @@ public class Conexion {
     public Connection conexion() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://www.db4free.net/facturacioneg", "michaelrf", "123456");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/facturacioneg", "root", "");
         } catch (ClassNotFoundException | SQLException e) {
             System.out.println("ClassNotFoundException  :"
                     + e.getMessage());
