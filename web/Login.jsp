@@ -43,13 +43,14 @@
                     </td>
                     </tr>
                 </table>
-                <div id="men">
+                <br>
+                
                 <%if (mensajeError != null) {%>
-                
+                <div id="men">
                 <%=mensajeError%>
-                
-                <%}%>
                 </div>
+                <%}%>
+                
             </div>
         </div>
     </form>
